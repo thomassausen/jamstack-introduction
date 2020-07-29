@@ -5,6 +5,10 @@ html, body {
     font-size: 18px;
     margin: 0;
 }
+a:link, a:visited {
+    color: #6dbbe7;
+    text-decoration: none;
+}
 
 main {
     margin: 3rem auto;
