@@ -6,8 +6,12 @@ html, body {
     margin: 0;
 }
 a:link, a:visited {
-    color: #6dbbe7;
+    color: #36A9E0;
     text-decoration: none;
+}
+
+a:hover {
+    color: #065272;
 }
 
 main {
