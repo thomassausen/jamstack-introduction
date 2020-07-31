@@ -22,3 +22,34 @@ const listRepos = async username => {
 };
 
 listRepos('gisu');
+
+/* 
+
+const generateList = (data) => {
+  return `
+    <li>
+      <a href="${data.html_url}">${data.name}</a>
+      (${data.stargazers_count})
+  </li>
+  `
+}
+const convertMarkup = data => data.map(val => generateList(val)).join('')
+
+const generateMarkup = (data, element) => {
+  const content = document.getElementById(element);
+  content.innerHTML = `<ul>${data}</ul>`;
+}
+
+const listRepos = async username => {
+  try {
+    const { res } = await fetch(`https://api.github.com/users/${username}/repos?type=owner&sort=updated`)
+    const markup = convertMarkup(res.json())
+    generateMarkup(markup, 'content')
+  } catch (error) {
+    console.error(error)
+  }
+};
+
+listRepos('gisu');
+
+*/
