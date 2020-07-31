@@ -21,4 +21,4 @@ const listRepos = async username => {
     
 };
 
-listRepos('thomassausen');
+listRepos('gisu');
